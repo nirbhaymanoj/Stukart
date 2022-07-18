@@ -1,0 +1,58 @@
+// body{
+//     margin-top: 20px;
+//     background-color: lightgray;
+// }
+
+#containerProfile
+{
+    max-width: 100%;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.main{
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topbar{
+    background-color: teal;
+    overflow: hidden;
+}
+.topbar a{
+    float: right;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 26px;
+}
+.sidebar{
+   background-color: #333;
+   color: white;
+   height: 100%;
+}
+.sidebar a{
+   margin-left: 10px;
+   display: block;
+   color: white;
+   padding-bottom: 10px;
+   font-size: 30px;
+   text-decoration: none;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    background-color: whitesmoke;
+}
+
+#profileImage
+{
+    margin: auto auto;
+    
+}

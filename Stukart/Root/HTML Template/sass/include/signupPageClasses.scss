@@ -1,0 +1,60 @@
+#signupHeader{
+    text-align: center;
+    background-color: $color-login-text-bg;
+}
+
+#signupForm{
+    display: flex;
+    flex-direction: column;
+    }
+
+.textFieldsDiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 36px;
+    margin-right: 36px;
+    justify-content: space-evenly;
+}
+
+.textfield{
+    height: 24px;
+    width: 180px;
+    margin-left: 24px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+#signupPageBody{
+    background-color: black;
+}
+
+#firstRowSignup,#secondRowSignup,#selectGender{
+    margin-top: 60px;
+}
+
+#signupButton{
+    background-color:  $color-login-text-bg;
+    font-size: 18px;
+    width: 120px;
+    padding: 6px 6px;
+    border-radius: 16px;
+    border: none;
+    margin-top: 60px ;
+    margin-left: 24px;
+}
+
+#selectGenderDiv{
+   padding-left: 24px;
+}
+
+#selectGender{
+    padding: 6px 6px;
+    border-radius: 16px;
+}
+
+#signupButton:hover{
+    background-color: rgb(157, 184, 192);
+    cursor: pointer;
+}

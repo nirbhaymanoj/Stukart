@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuKart</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Start header -->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <div class="font-rale font-size-14" id="divTop">
+                <a href="#" class="px-3 border-right border-left text-dark logoutWishlistAnchor">Logout</a>
+            </div>
+        </div>
+
+        <!-- Primary navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg" id="navbarHome">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">StuKart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto font-rubik">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Categories <i
+                                    class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favourites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <form action="#" class="font-size-14 font-rale">
+                        <a href="#" class="py-2 rounded-pill color-primary-bg">
+                            <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                            <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                        </a>
+                    </form>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- !Primary navbar -->
+    </header>
+    <!-- !Start header -->
+
+    <!-- Main site -->
+    <main>
+
+        <!-- Shopping cart section  -->
+        <section id="cart" class="py-3">
+            <div class="container-fluid w-75">
+                <h5 class="font-baloo font-size-20">Shopping Cart</h5>
+
+                <!--  shopping cart items   -->
+                <div class="row">
+                    <div class="col-sm-9">
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-2">
+                                <img src="./assets/imgbook.jpg" style="height: 120px;" alt="cart1"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-baloo font-size-20">DBMS Book</h5>
+                                <small>by Mohit</small>
+                                <!-- Add to favourite -->
+                                <div class="d-flex">
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="far fa-star productStarFavourite"></i></span>
+                                    </div>
+                                </div>
+                                <!--  !Add to favourite-->
+
+
+
+                            </div>
+
+                            <div class="col-sm-2 text-right">
+                                <div class="font-size-20 text-danger font-baloo">
+                                    Rs <span class="product_price">500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !cart item -->
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-2">
+                                <img src="./assets/imgpen.jpg" style="height: 120px;" alt="cart1"
+                                    class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-baloo font-size-20">Flair Pen</h5>
+                                <small>by Mohit</small>
+                                <!-- Add to favourite -->
+                                <div class="d-flex">
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="far fa-star productStarFavourite"></i></span>
+                                    </div>
+                                </div>
+                                <!--  !Add to favourite-->
+
+
+
+                            </div>
+
+                            <div class="col-sm-2 text-right">
+                                <div class="font-size-20 text-danger font-baloo">
+                                    Rs <span class="product_price">50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !cart item -->
+                       
+                    </div>
+                    <!-- subtotal section-->
+                    <div class="col-sm-3">
+                        <div class="sub-total border text-center mt-2">
+                            <div class="border-top py-4">
+                                <h5 class="font-baloo font-size-20">Subtotal (2 item):&nbsp; <span
+                                        class="text-danger">Rs <span class="text-danger" id="deal-price">550.00</span>
+                                    </span> </h5>
+                                <button type="submit" class="btn btn-warning mt-3">Proceed to Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- !subtotal section-->
+                </div>
+                <!--  !shopping cart items   -->
+            </div>
+        </section>
+        <!-- !Shopping cart section  -->
+
+        <!-- Top sale  -->
+        <section id="top-sale">
+            <div class="container py-5">
+                <h4 class="font-rubik font-size-20">Top Sale</h4>
+                <hr>
+                <!-- owl carousel  -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item py-2 px-4">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/imgpen.jpg" alt="product1" class="img-fluid img-dim"></a>
+                            <div class="text-center">
+                                <h6>Flair Pen</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>Rs 50</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/imgbook.jpg" alt="product1" class="img-fluid img-dim"></a>
+                            <div class="text-center">
+                                <h6>DBMS book</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>Rs 500</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- !owl carousel  -->
+            </div>
+        </section>
+        <!-- !Top sale  -->
+    </main>
+    <!-- !Main site -->
+    <!-- start #footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+
+    </footer>
+    <!-- !start #footer -->
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Owl carousel js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- !Isotope plugin cdn  -->
+    <!-- Javascript file linking -->
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>

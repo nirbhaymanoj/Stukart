@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuKart</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Start header -->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <div class="font-rale font-size-14" id="divTop">
+                <a href="#" class="px-3 border-right border-left text-dark logoutWishlistAnchor">Logout</a>
+            </div>
+        </div>
+
+        <!-- Primary navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg" id="navbarHome">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">StuKart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto font-rubik">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Categories <i
+                                    class="fas fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favourites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <form action="#" class="font-size-14 font-rale">
+                        <a href="#" class="py-2 rounded-pill color-primary-bg">
+                            <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                            <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                        </a>
+                    </form>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- !Primary navbar -->
+    </header>
+    <!-- !Start header -->
+
+    <!-- Main site -->
+    <main>
+
+       <div class="container">
+         <div class="title">Sell Product</div>
+         <form action="#">
+          <div class="product-details">
+              <div class="input-box">
+                  <span class="details">Product Name</span>
+                  <input type="text" placeholder="Enter product name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Product Image</span>
+                <input type="file" id="file" accept="image/*" required>
+                <label for="file" id="uploadFileLabel">
+                    <i class="material-icons">add_photo_alternate</i> &nbsp;
+                    Choose a Photo
+                </label>
+              </div>
+              <div class="input-box">
+                <span class="details">Product MRP</span>
+                <input type="text" placeholder="Enter product MRP" required>
+              </div>
+              
+              <div class="input-box">
+                <span class="details">Product Selling Price</span>
+                <input type="text" placeholder="Enter product selling price" required>
+            </div>
+        
+          </div>
+          <div class="input-box">
+            <span class="details">Product Description</span>
+            <textarea  rows="3" cols="50" id="product-description" required>
+            </textarea>
+
+          </div>
+          <!-- <div class="input-box" >
+            <span class="details">Product Description</span>
+            <input type="text" id="product-description" placeholder="Enter product description" required>
+          </div> -->
+         <div class="product-type">
+             <input type="radio" name="product" id="dot-1">
+             <input type="radio" name="product" id="dot-2">
+             <input type="radio" name="product" id="dot-3">
+             <input type="radio" name="product" id="dot-4">
+             <span class="product-title">Product Type</span>
+             <div class="category">
+                 <label for="dot-1">
+                     <span class="dot one"></span>
+                     <span class="type">Stationary</span>
+                 </label>
+                 <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="type">Furniture</span>
+                </label>
+                <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="type">Gadgets</span>
+                </label>
+                <label for="dot-4">
+                    <span class="dot four"></span>
+                    <span class="type">Others</span>
+                </label>
+             </div>
+         </div>
+         <div class="button">
+             <input type="submit" value="Sell Product">
+         </div>
+         </form>  
+
+
+
+
+       </div>
+     
+       
+   
+
+
+    </main>
+    <!-- !Main site -->
+    <!-- start #footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+
+    </footer>
+    <!-- !start #footer -->
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Owl carousel js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- !Isotope plugin cdn  -->
+    <!-- Javascript file linking -->
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>

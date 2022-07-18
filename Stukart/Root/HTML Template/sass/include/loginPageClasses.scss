@@ -1,0 +1,69 @@
+.login-header{
+    font-weight: bold;
+    text-align: center;
+    background-color: $color-login-text-bg;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 48px;
+}
+
+#divLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: fit-content;
+    // border: 2px solid red;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textFieldsLogin{
+    height: 24px;
+    margin-top: 4px;    
+    margin-bottom: 8px;  
+    border-radius: 12px; 
+    text-align: center; 
+}
+
+#loginButton{
+    background-color:  $color-login-text-bg;
+    font-size: 18px;
+    width: 84px;
+    padding: 6px 6px;
+    border-radius: 16px;
+    border: none;
+    margin-top: 12px;
+}
+
+#loginButton:hover{
+    background-color: rgb(157, 184, 192);
+    cursor: pointer;
+}
+
+#textBelowLoginButton{
+    color: white;
+    margin: 12px 0px 0px;
+    text-align: center;
+}
+
+#signupText{
+    color: burlywood;
+    text-decoration: none;
+    margin: auto;
+}
+
+.login-body{
+   background-color: black;  
+ }
+
+#signinText{
+    margin-bottom: 24px;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="signupPageBody">
+
+     <!-- Start header -->
+     <header id="header">
+        <div id="signupHeader" class="strip d-flex">
+        <p class="font-rubik font-size-48">Sign Up</p>
+        </div>
+        </header>
+       <!-- !Start header -->
+ 
+       <!-- Main site -->
+       <main>
+        <div id="signupForm">
+            <form action="noaction.php">
+                <div class="textFieldsDiv" id="firstRowSignup">
+                    <input type="text" class="textfield" placeholder="Name" id="">
+                    <input type="tel" pattern="[0-9]{10}" class="textfield" placeholder="Phone" id="">
+                    <input type="email" class="textfield" placeholder="Email" id="">
+                </div>
+                <div class="textFieldsDiv" id="secondRowSignup">
+                    <input type="number" class="textfield" placeholder="Age" id="">
+                    <input type="text" class="textfield" placeholder="City" id="">
+                    <input type="number" pattern="[0-9]{6}" class="textfield" placeholder="Pincode" id="">
+                </div>
+                <div class="textFieldsDiv" id="selectGenderDiv">
+                    <select name="Gender" id="selectGender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="textFieldsDiv">
+                    <Button id="signupButton">Sign Up</Button>
+                </div>
+            </form>
+        </div>
+       </main>
+       <!-- !Main site -->
+       <!-- Footer section -->
+       <footer>
+ 
+       </footer>
+       <!-- !Footer section -->
+    
+</body>
+</html>
